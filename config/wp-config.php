@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '8a1a554b6fc76bc68f666e201cae06d1c9c327d7');
-define('SECURE_AUTH_KEY',  '6cfd410f9ed7e719a5fc4af2e5b4a62cd18cc3d4');
-define('LOGGED_IN_KEY',    'eb3a713733339e1cbef0a51001eaa8f44d9f9c49');
-define('NONCE_KEY',        'c049b12cad35cd0b72dbd65dad000f60b018b1c2');
-define('AUTH_SALT',        'ed7677e5f0acf9b1486b70c5f39bfceed0896744');
-define('SECURE_AUTH_SALT', '1edbd6f5e2ded95abaccc4d0236e1cc58c28f2fc');
-define('LOGGED_IN_SALT',   '7c1dd2fc5e03b996d0f61ab8af3120bbf68a9e29');
-define('NONCE_SALT',       'e81e72ee1632e86ebb5948327624c217f03a555a');
+define('AUTH_KEY',         getenv('AUTH_KEY'));
+define('SECURE_AUTH_KEY',  getenv('SECURE_AUTH_KEY'));
+define('LOGGED_IN_KEY',    getenv('LOGGED_IN_KEY'));
+define('NONCE_KEY',        getenv('NONCE_KEY'));
+define('AUTH_SALT',        getenv('AUTH_SALT'));
+define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT',   getenv('LOGGED_IN_SALT'));
+define('NONCE_SALT',       getenv('NONCE_SALT'));
 
 /**#@-*/
 
