@@ -1,4 +1,4 @@
-FROM  wordpress:4.7.2-apache
+FROM  wordpress:4.7.3-apache
 
 ENV WPCLI_VERSION 0.24.1
 
