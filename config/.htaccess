@@ -13,3 +13,15 @@ php_value upload_max_filesize 128M
 php_value post_max_size 128M
 php_value max_execution_time 300
 php_value max_input_time 300
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  <FilesMatch "\.(php|html)$">
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set Content-Security-Policy "media-src *;" 
+    Header set Referrer-Policy "strict-origin"
+    Header always unset X-Powered-By
+    Header unset X-Powered-By
+  </FilesMatch>
+</IfModule>
