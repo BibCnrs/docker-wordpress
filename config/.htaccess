@@ -18,7 +18,7 @@ php_value max_input_time 300
   <FilesMatch "\.(php|html)$">
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
-    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set Strict-Transport-Security "max-age=0; includeSubDomains"
     Header set Content-Security-Policy "media-src *;" 
     Header set Referrer-Policy "strict-origin"
     Header always unset X-Powered-By
